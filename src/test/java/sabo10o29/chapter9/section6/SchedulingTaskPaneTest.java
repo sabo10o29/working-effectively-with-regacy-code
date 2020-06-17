@@ -8,13 +8,13 @@ public class SchedulingTaskPaneTest {
 
     //問題点
     //SchedulingTaskを渡す必要があるが、SchedulingTask生成にもSchedulerとMeetingResolverの生成が必要
+    //SchedulingTaskはSerialTaskを継承しており、インタフェースの抽出(377)でも影響範囲が大きい
     @Test
     public void teset(){
         //SchedulingTaskPane pane = new SchedulingTaskPane();
     }
 
     //解決案1
-    //SchedulingTaskはSerialTaskを継承しており、インタフェースの抽出(377)でも影響範囲が大きい
     //SchedulingTaskにインタフェースを追加する
     //SchedulingTaskPaneのコンストラクタの引数をISchedulingTaskに変更
     @Test
